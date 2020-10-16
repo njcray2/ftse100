@@ -1,2 +1,3 @@
-# ftse100
-ftse100 QVM animation
+# QVM Cube
+QVM 3D animation examples
+
