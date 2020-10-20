@@ -23,7 +23,8 @@
 .playsr  {background-color:#E0FFE0; padding:3px 10px 13px 15px; margin:6px 6px;}
 .rotator {background-color:#3F3F58; padding:3px 10px 13px 15px; margin:6px 6px;}
 .choose  {background-color:#E0E0FF; padding:3px  5px  3px 15px; margin:6px 6px;}
-.stock   {vertical-align:top; width:55px; display:inline-block; margin:2px 0 0 0;}
+.stocklist {margin:15px 0 15px 0;}
+.stocklist .rglPlayer {vertical-align:top; width:55px; display:inline-block; margin:2px 0 0 0;}
 </style>
 <div class="lhs">
   <div id="stockranks" style="width:100%;height:100%;" class="rglWebGL html-widget"></div>
@@ -52,411 +53,209 @@
     <p>Click on a stock's name to show that stock. Click again to remove it.</p>
     <div id="nopaths" style="width:auto;height:auto;" class="rglPlayer html-widget"></div>
     <script type="application/json" data-for="nopaths">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97,100,103,106,109,112,115,118,121,124,127,130,133,136,139,142,145,148,151,154,157,160,163,166,169,172,175,178,181,184,187,190,193,196,199,202,205,208,211,214,217,220,223,226,229,232,235,238,241,244,247,250,253,256,259,262,265,268,271,274,277,280,283,286,289,292,295,298,301,304,307,310,313,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105,108,111,114,117,120,123,126,129,132,135,138,141,144,147,150,153,156,159,162,165,168,171,174,177,180,183,186,189,192,195,198,201,204,207,210,213,216,219,222,225,228,231,234,237,240,243,246,249,252,255,258,261,264,267,270,273,276,279,282,285,288,291,294,297,300,303,306,309,312]],"subscenes":null,"fullset":[13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97,100,103,106,109,112,115,118,121,124,127,130,133,136,139,142,145,148,151,154,157,160,163,166,169,172,175,178,181,184,187,190,193,196,199,202,205,208,211,214,217,220,223,226,229,232,235,238,241,244,247,250,253,256,259,262,265,268,271,274,277,280,283,286,289,292,295,298,301,304,307,310,313,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105,108,111,114,117,120,123,126,129,132,135,138,141,144,147,150,153,156,159,162,165,168,171,174,177,180,183,186,189,192,195,198,201,204,207,210,213,216,219,222,225,228,231,234,237,240,243,246,249,252,255,258,261,264,267,270,273,276,279,282,285,288,291,294,297,300,303,306,309,312],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["Show all stocks",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-    <div style="margin:15px 0 15px 0">
-      <span class="stock">
-        <div id="ABC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="ABC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[14,13,12]],"subscenes":null,"fullset":[14,13,12],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ABC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="ABDP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="ABDP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[17,16,15]],"subscenes":null,"fullset":[17,16,15],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ABDP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="AFM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="AFM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[20,19,18]],"subscenes":null,"fullset":[20,19,18],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AFM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="AFX" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="AFX">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[23,22,21]],"subscenes":null,"fullset":[23,22,21],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AFX",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="AMS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="AMS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[26,25,24]],"subscenes":null,"fullset":[26,25,24],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AMS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="APGN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="APGN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[29,28,27]],"subscenes":null,"fullset":[29,28,27],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["APGN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="APH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="APH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[32,31,30]],"subscenes":null,"fullset":[32,31,30],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["APH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="ASC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="ASC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[35,34,33]],"subscenes":null,"fullset":[35,34,33],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ASC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="ASY" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="ASY">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[38,37,36]],"subscenes":null,"fullset":[38,37,36],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ASY",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="ATYM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="ATYM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[41,40,39]],"subscenes":null,"fullset":[41,40,39],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ATYM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="AVCT" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="AVCT">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[44,43,42]],"subscenes":null,"fullset":[44,43,42],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AVCT",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="BMK" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="BMK">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[47,46,45]],"subscenes":null,"fullset":[47,46,45],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BMK",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="BMN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="BMN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[50,49,48]],"subscenes":null,"fullset":[50,49,48],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BMN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="BOO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="BOO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[53,52,51]],"subscenes":null,"fullset":[53,52,51],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BOO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="BREE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="BREE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[56,55,54]],"subscenes":null,"fullset":[56,55,54],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BREE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="BRK" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="BRK">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[59,58,57]],"subscenes":null,"fullset":[59,58,57],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BRK",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="BUR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="BUR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[62,61,60]],"subscenes":null,"fullset":[62,61,60],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BUR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="BVXP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="BVXP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[65,64,63]],"subscenes":null,"fullset":[65,64,63],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BVXP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CAM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CAM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[68,67,66]],"subscenes":null,"fullset":[68,67,66],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CAM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CAML" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CAML">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[71,70,69]],"subscenes":null,"fullset":[71,70,69],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CAML",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CDM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CDM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[74,73,72]],"subscenes":null,"fullset":[74,73,72],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CDM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CHRT" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CHRT">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[77,76,75]],"subscenes":null,"fullset":[77,76,75],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CHRT",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CLIN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CLIN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[80,79,78]],"subscenes":null,"fullset":[80,79,78],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CLIN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CREO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CREO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[83,82,81]],"subscenes":null,"fullset":[83,82,81],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CREO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CRW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CRW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[86,85,84]],"subscenes":null,"fullset":[86,85,84],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CRW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CTH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CTH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[89,88,87]],"subscenes":null,"fullset":[89,88,87],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CTH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CVSG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CVSG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[92,91,90]],"subscenes":null,"fullset":[92,91,90],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CVSG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="CWR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="CWR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[95,94,93]],"subscenes":null,"fullset":[95,94,93],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CWR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="DATA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="DATA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[98,97,96]],"subscenes":null,"fullset":[98,97,96],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["DATA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="DOTD" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="DOTD">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[101,100,99]],"subscenes":null,"fullset":[101,100,99],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["DOTD",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="DTG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="DTG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[104,103,102]],"subscenes":null,"fullset":[104,103,102],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["DTG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="EMIS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="EMIS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[107,106,105]],"subscenes":null,"fullset":[107,106,105],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["EMIS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="FDEV" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="FDEV">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[110,109,108]],"subscenes":null,"fullset":[110,109,108],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FDEV",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="FDP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="FDP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[113,112,111]],"subscenes":null,"fullset":[113,112,111],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FDP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="FEVR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="FEVR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[116,115,114]],"subscenes":null,"fullset":[116,115,114],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FEVR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="FRP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="FRP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[119,118,117]],"subscenes":null,"fullset":[119,118,117],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FRP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="GAMA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="GAMA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[122,121,120]],"subscenes":null,"fullset":[122,121,120],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GAMA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="GBG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="GBG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[125,124,123]],"subscenes":null,"fullset":[125,124,123],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GBG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="GGP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="GGP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[128,127,126]],"subscenes":null,"fullset":[128,127,126],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GGP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="GHH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="GHH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[131,130,129]],"subscenes":null,"fullset":[131,130,129],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GHH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="GROW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="GROW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[134,133,132]],"subscenes":null,"fullset":[134,133,132],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GROW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="GRP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="GRP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[137,136,135]],"subscenes":null,"fullset":[137,136,135],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GRP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="GTLY" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="GTLY">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[140,139,138]],"subscenes":null,"fullset":[140,139,138],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GTLY",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="HCM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="HCM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[143,142,141]],"subscenes":null,"fullset":[143,142,141],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["HCM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="HGM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="HGM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[146,145,144]],"subscenes":null,"fullset":[146,145,144],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["HGM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="HOTC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="HOTC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[149,148,147]],"subscenes":null,"fullset":[149,148,147],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["HOTC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="IDEA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="IDEA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[152,151,150]],"subscenes":null,"fullset":[152,151,150],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IDEA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="IGR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="IGR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[155,154,153]],"subscenes":null,"fullset":[155,154,153],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IGR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="IMO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="IMO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[158,157,156]],"subscenes":null,"fullset":[158,157,156],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IMO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="IOM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="IOM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[161,160,159]],"subscenes":null,"fullset":[161,160,159],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IOM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="IPX" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="IPX">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[164,163,162]],"subscenes":null,"fullset":[164,163,162],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IPX",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="IQE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="IQE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[167,166,165]],"subscenes":null,"fullset":[167,166,165],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IQE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="ITM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="ITM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[170,169,168]],"subscenes":null,"fullset":[170,169,168],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ITM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="JDG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="JDG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[173,172,171]],"subscenes":null,"fullset":[173,172,171],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JDG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="JHD" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="JHD">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[176,175,174]],"subscenes":null,"fullset":[176,175,174],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JHD",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="JSE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="JSE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[179,178,177]],"subscenes":null,"fullset":[179,178,177],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JSE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="JSG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="JSG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[182,181,180]],"subscenes":null,"fullset":[182,181,180],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JSG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="KAPE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="KAPE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[185,184,183]],"subscenes":null,"fullset":[185,184,183],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KAPE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="KETL" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="KETL">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[188,187,186]],"subscenes":null,"fullset":[188,187,186],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KETL",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="KGH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="KGH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[191,190,189]],"subscenes":null,"fullset":[191,190,189],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KGH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="KWS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="KWS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[194,193,192]],"subscenes":null,"fullset":[194,193,192],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KWS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="LTG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="LTG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[197,196,195]],"subscenes":null,"fullset":[197,196,195],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["LTG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="MAB1" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="MAB1">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[200,199,198]],"subscenes":null,"fullset":[200,199,198],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MAB1",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="MIDW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="MIDW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[203,202,201]],"subscenes":null,"fullset":[203,202,201],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MIDW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="MPE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="MPE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[206,205,204]],"subscenes":null,"fullset":[206,205,204],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MPE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="MRL" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="MRL">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[209,208,207]],"subscenes":null,"fullset":[209,208,207],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MRL",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="MTW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="MTW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[212,211,210]],"subscenes":null,"fullset":[212,211,210],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MTW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="NFC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="NFC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[215,214,213]],"subscenes":null,"fullset":[215,214,213],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["NFC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="NICL" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="NICL">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[218,217,216]],"subscenes":null,"fullset":[218,217,216],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["NICL",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="NUM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="NUM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[221,220,219]],"subscenes":null,"fullset":[221,220,219],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["NUM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="PAF" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="PAF">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[224,223,222]],"subscenes":null,"fullset":[224,223,222],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PAF",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="PEBB" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="PEBB">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[227,226,225]],"subscenes":null,"fullset":[227,226,225],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PEBB",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="PMI" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="PMI">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[230,229,228]],"subscenes":null,"fullset":[230,229,228],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PMI",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="POLR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="POLR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[233,232,231]],"subscenes":null,"fullset":[233,232,231],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["POLR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="PRSM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="PRSM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[236,235,234]],"subscenes":null,"fullset":[236,235,234],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PRSM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="RENX" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="RENX">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[239,238,237]],"subscenes":null,"fullset":[239,238,237],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RENX",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="RNWH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="RNWH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[242,241,240]],"subscenes":null,"fullset":[242,241,240],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RNWH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="RQIH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="RQIH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[245,244,243]],"subscenes":null,"fullset":[245,244,243],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RQIH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="RST" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="RST">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[248,247,246]],"subscenes":null,"fullset":[248,247,246],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RST",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="RWS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="RWS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[251,250,249]],"subscenes":null,"fullset":[251,250,249],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RWS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="SCPA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="SCPA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[254,253,252]],"subscenes":null,"fullset":[254,253,252],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SCPA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="SIR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="SIR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[257,256,255]],"subscenes":null,"fullset":[257,256,255],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SIR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="SLN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="SLN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[260,259,258]],"subscenes":null,"fullset":[260,259,258],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SLN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="SMS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="SMS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[263,262,261]],"subscenes":null,"fullset":[263,262,261],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SMS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="SQZ" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="SQZ">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[266,265,264]],"subscenes":null,"fullset":[266,265,264],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SQZ",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="SUMO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="SUMO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[269,268,267]],"subscenes":null,"fullset":[269,268,267],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SUMO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="TCM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="TCM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[272,271,270]],"subscenes":null,"fullset":[272,271,270],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TCM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="TFW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="TFW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[275,274,273]],"subscenes":null,"fullset":[275,274,273],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TFW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="TM17" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="TM17">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[278,277,276]],"subscenes":null,"fullset":[278,277,276],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TM17",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="TRCS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="TRCS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[281,280,279]],"subscenes":null,"fullset":[281,280,279],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TRCS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="TRMR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="TRMR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[284,283,282]],"subscenes":null,"fullset":[284,283,282],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TRMR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="TUNE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="TUNE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[287,286,285]],"subscenes":null,"fullset":[287,286,285],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TUNE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="UPR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="UPR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[290,289,288]],"subscenes":null,"fullset":[290,289,288],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["UPR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="VCP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="VCP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[293,292,291]],"subscenes":null,"fullset":[293,292,291],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["VCP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="WAND" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="WAND">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[296,295,294]],"subscenes":null,"fullset":[296,295,294],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WAND",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="WHR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="WHR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[299,298,297]],"subscenes":null,"fullset":[299,298,297],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WHR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="WINE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="WINE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[302,301,300]],"subscenes":null,"fullset":[302,301,300],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WINE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="WJG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="WJG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[305,304,303]],"subscenes":null,"fullset":[305,304,303],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WJG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="YNGA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="YNGA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[308,307,306]],"subscenes":null,"fullset":[308,307,306],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["YNGA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="YNGN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="YNGN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[311,310,309]],"subscenes":null,"fullset":[311,310,309],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["YNGN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
-      <span class="stock">
-        <div id="YOU" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
-        <script type="application/json" data-for="YOU">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[314,313,312]],"subscenes":null,"fullset":[314,313,312],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["YOU",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
-      </span>
+    <div class="stocklist">
+      <div id="ABC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="ABC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[14,13,12]],"subscenes":null,"fullset":[14,13,12],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ABC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="ABDP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="ABDP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[17,16,15]],"subscenes":null,"fullset":[17,16,15],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ABDP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="AFM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="AFM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[20,19,18]],"subscenes":null,"fullset":[20,19,18],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AFM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="AFX" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="AFX">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[23,22,21]],"subscenes":null,"fullset":[23,22,21],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AFX",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="AMS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="AMS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[26,25,24]],"subscenes":null,"fullset":[26,25,24],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AMS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="APGN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="APGN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[29,28,27]],"subscenes":null,"fullset":[29,28,27],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["APGN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="APH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="APH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[32,31,30]],"subscenes":null,"fullset":[32,31,30],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["APH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="ASC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="ASC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[35,34,33]],"subscenes":null,"fullset":[35,34,33],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ASC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="ASY" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="ASY">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[38,37,36]],"subscenes":null,"fullset":[38,37,36],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ASY",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="ATYM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="ATYM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[41,40,39]],"subscenes":null,"fullset":[41,40,39],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ATYM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="AVCT" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="AVCT">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[44,43,42]],"subscenes":null,"fullset":[44,43,42],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["AVCT",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="BMK" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="BMK">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[47,46,45]],"subscenes":null,"fullset":[47,46,45],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BMK",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="BMN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="BMN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[50,49,48]],"subscenes":null,"fullset":[50,49,48],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BMN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="BOO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="BOO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[53,52,51]],"subscenes":null,"fullset":[53,52,51],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BOO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="BREE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="BREE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[56,55,54]],"subscenes":null,"fullset":[56,55,54],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BREE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="BRK" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="BRK">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[59,58,57]],"subscenes":null,"fullset":[59,58,57],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BRK",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="BUR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="BUR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[62,61,60]],"subscenes":null,"fullset":[62,61,60],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BUR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="BVXP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="BVXP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[65,64,63]],"subscenes":null,"fullset":[65,64,63],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["BVXP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CAM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CAM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[68,67,66]],"subscenes":null,"fullset":[68,67,66],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CAM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CAML" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CAML">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[71,70,69]],"subscenes":null,"fullset":[71,70,69],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CAML",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CDM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CDM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[74,73,72]],"subscenes":null,"fullset":[74,73,72],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CDM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CHRT" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CHRT">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[77,76,75]],"subscenes":null,"fullset":[77,76,75],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CHRT",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CLIN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CLIN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[80,79,78]],"subscenes":null,"fullset":[80,79,78],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CLIN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CREO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CREO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[83,82,81]],"subscenes":null,"fullset":[83,82,81],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CREO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CRW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CRW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[86,85,84]],"subscenes":null,"fullset":[86,85,84],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CRW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CTH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CTH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[89,88,87]],"subscenes":null,"fullset":[89,88,87],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CTH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CVSG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CVSG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[92,91,90]],"subscenes":null,"fullset":[92,91,90],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CVSG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="CWR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="CWR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[95,94,93]],"subscenes":null,"fullset":[95,94,93],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["CWR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="DATA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="DATA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[98,97,96]],"subscenes":null,"fullset":[98,97,96],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["DATA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="DOTD" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="DOTD">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[101,100,99]],"subscenes":null,"fullset":[101,100,99],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["DOTD",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="DTG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="DTG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[104,103,102]],"subscenes":null,"fullset":[104,103,102],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["DTG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="EMIS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="EMIS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[107,106,105]],"subscenes":null,"fullset":[107,106,105],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["EMIS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="FDEV" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="FDEV">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[110,109,108]],"subscenes":null,"fullset":[110,109,108],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FDEV",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="FDP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="FDP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[113,112,111]],"subscenes":null,"fullset":[113,112,111],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FDP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="FEVR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="FEVR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[116,115,114]],"subscenes":null,"fullset":[116,115,114],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FEVR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="FRP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="FRP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[119,118,117]],"subscenes":null,"fullset":[119,118,117],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["FRP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="GAMA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="GAMA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[122,121,120]],"subscenes":null,"fullset":[122,121,120],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GAMA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="GBG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="GBG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[125,124,123]],"subscenes":null,"fullset":[125,124,123],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GBG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="GGP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="GGP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[128,127,126]],"subscenes":null,"fullset":[128,127,126],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GGP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="GHH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="GHH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[131,130,129]],"subscenes":null,"fullset":[131,130,129],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GHH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="GROW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="GROW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[134,133,132]],"subscenes":null,"fullset":[134,133,132],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GROW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="GRP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="GRP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[137,136,135]],"subscenes":null,"fullset":[137,136,135],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GRP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="GTLY" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="GTLY">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[140,139,138]],"subscenes":null,"fullset":[140,139,138],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["GTLY",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="HCM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="HCM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[143,142,141]],"subscenes":null,"fullset":[143,142,141],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["HCM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="HGM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="HGM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[146,145,144]],"subscenes":null,"fullset":[146,145,144],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["HGM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="HOTC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="HOTC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[149,148,147]],"subscenes":null,"fullset":[149,148,147],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["HOTC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="IDEA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="IDEA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[152,151,150]],"subscenes":null,"fullset":[152,151,150],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IDEA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="IGR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="IGR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[155,154,153]],"subscenes":null,"fullset":[155,154,153],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IGR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="IMO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="IMO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[158,157,156]],"subscenes":null,"fullset":[158,157,156],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IMO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="IOM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="IOM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[161,160,159]],"subscenes":null,"fullset":[161,160,159],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IOM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="IPX" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="IPX">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[164,163,162]],"subscenes":null,"fullset":[164,163,162],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IPX",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="IQE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="IQE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[167,166,165]],"subscenes":null,"fullset":[167,166,165],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["IQE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="ITM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="ITM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[170,169,168]],"subscenes":null,"fullset":[170,169,168],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["ITM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="JDG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="JDG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[173,172,171]],"subscenes":null,"fullset":[173,172,171],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JDG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="JHD" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="JHD">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[176,175,174]],"subscenes":null,"fullset":[176,175,174],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JHD",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="JSE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="JSE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[179,178,177]],"subscenes":null,"fullset":[179,178,177],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JSE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="JSG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="JSG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[182,181,180]],"subscenes":null,"fullset":[182,181,180],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["JSG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="KAPE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="KAPE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[185,184,183]],"subscenes":null,"fullset":[185,184,183],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KAPE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="KETL" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="KETL">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[188,187,186]],"subscenes":null,"fullset":[188,187,186],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KETL",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="KGH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="KGH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[191,190,189]],"subscenes":null,"fullset":[191,190,189],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KGH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="KWS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="KWS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[194,193,192]],"subscenes":null,"fullset":[194,193,192],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["KWS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="LTG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="LTG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[197,196,195]],"subscenes":null,"fullset":[197,196,195],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["LTG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="MAB1" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="MAB1">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[200,199,198]],"subscenes":null,"fullset":[200,199,198],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MAB1",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="MIDW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="MIDW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[203,202,201]],"subscenes":null,"fullset":[203,202,201],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MIDW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="MPE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="MPE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[206,205,204]],"subscenes":null,"fullset":[206,205,204],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MPE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="MRL" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="MRL">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[209,208,207]],"subscenes":null,"fullset":[209,208,207],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MRL",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="MTW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="MTW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[212,211,210]],"subscenes":null,"fullset":[212,211,210],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["MTW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="NFC" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="NFC">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[215,214,213]],"subscenes":null,"fullset":[215,214,213],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["NFC",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="NICL" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="NICL">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[218,217,216]],"subscenes":null,"fullset":[218,217,216],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["NICL",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="NUM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="NUM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[221,220,219]],"subscenes":null,"fullset":[221,220,219],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["NUM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="PAF" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="PAF">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[224,223,222]],"subscenes":null,"fullset":[224,223,222],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PAF",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="PEBB" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="PEBB">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[227,226,225]],"subscenes":null,"fullset":[227,226,225],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PEBB",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="PMI" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="PMI">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[230,229,228]],"subscenes":null,"fullset":[230,229,228],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PMI",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="POLR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="POLR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[233,232,231]],"subscenes":null,"fullset":[233,232,231],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["POLR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="PRSM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="PRSM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[236,235,234]],"subscenes":null,"fullset":[236,235,234],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["PRSM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="RENX" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="RENX">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[239,238,237]],"subscenes":null,"fullset":[239,238,237],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RENX",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="RNWH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="RNWH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[242,241,240]],"subscenes":null,"fullset":[242,241,240],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RNWH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="RQIH" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="RQIH">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[245,244,243]],"subscenes":null,"fullset":[245,244,243],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RQIH",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="RST" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="RST">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[248,247,246]],"subscenes":null,"fullset":[248,247,246],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RST",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="RWS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="RWS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[251,250,249]],"subscenes":null,"fullset":[251,250,249],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["RWS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="SCPA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="SCPA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[254,253,252]],"subscenes":null,"fullset":[254,253,252],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SCPA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="SIR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="SIR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[257,256,255]],"subscenes":null,"fullset":[257,256,255],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SIR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="SLN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="SLN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[260,259,258]],"subscenes":null,"fullset":[260,259,258],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SLN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="SMS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="SMS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[263,262,261]],"subscenes":null,"fullset":[263,262,261],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SMS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="SQZ" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="SQZ">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[266,265,264]],"subscenes":null,"fullset":[266,265,264],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SQZ",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="SUMO" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="SUMO">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[269,268,267]],"subscenes":null,"fullset":[269,268,267],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["SUMO",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="TCM" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="TCM">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[272,271,270]],"subscenes":null,"fullset":[272,271,270],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TCM",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="TFW" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="TFW">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[275,274,273]],"subscenes":null,"fullset":[275,274,273],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TFW",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="TM17" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="TM17">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[278,277,276]],"subscenes":null,"fullset":[278,277,276],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TM17",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="TRCS" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="TRCS">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[281,280,279]],"subscenes":null,"fullset":[281,280,279],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TRCS",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="TRMR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="TRMR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[284,283,282]],"subscenes":null,"fullset":[284,283,282],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TRMR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="TUNE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="TUNE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[287,286,285]],"subscenes":null,"fullset":[287,286,285],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["TUNE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="UPR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="UPR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[290,289,288]],"subscenes":null,"fullset":[290,289,288],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["UPR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="VCP" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="VCP">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[293,292,291]],"subscenes":null,"fullset":[293,292,291],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["VCP",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="WAND" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="WAND">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[296,295,294]],"subscenes":null,"fullset":[296,295,294],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WAND",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="WHR" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="WHR">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[299,298,297]],"subscenes":null,"fullset":[299,298,297],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WHR",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="WINE" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="WINE">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[302,301,300]],"subscenes":null,"fullset":[302,301,300],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WINE",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="WJG" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="WJG">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[305,304,303]],"subscenes":null,"fullset":[305,304,303],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["WJG",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="YNGA" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="YNGA">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[308,307,306]],"subscenes":null,"fullset":[308,307,306],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["YNGA",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="YNGN" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="YNGN">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[311,310,309]],"subscenes":null,"fullset":[311,310,309],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["YNGN",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
+      <div id="YOU" style="width:55px;height:auto;" class="rglPlayer html-widget"></div>
+      <script type="application/json" data-for="YOU">{"x":{"actions":[{"type":"subsetSetter","value":0,"subsets":[[],[314,313,312]],"subscenes":null,"fullset":[314,313,312],"accumulate":false,"labels":null}],"start":0,"stop":1,"value":0,"interval":1,"rate":1,"components":["Step","Label"],"buttonLabels":["YOU",""],"pause":"Pause","loop":true,"step":1,"labels":["&#x274c;","&#x2705;"],"precision":3,"reinit":null,"sceneId":"stockranks","respondTo":null},"evals":[],"jsHooks":[]}</script>
     </div>
   </div>
 </div>
