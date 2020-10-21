@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <style>body{background-color:white;}</style>
-<script src="webgl/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="webgl/htmlwidgets-1.5.2/htmlwidgets.js"></script>
 <link href="webgl/rglwidgetClass-2/rgl.css" rel="stylesheet" />
 <script src="webgl/rglwidgetClass-2/rglClass.src.js"></script>
 <script src="webgl/CanvasMatrix4-2016/CanvasMatrix.src.js"></script>
@@ -25,6 +25,10 @@
 .choose  {background-color:#E0E0FF; padding:3px  5px  3px 15px; margin:6px 6px;}
 .stocklist {margin:15px 0 15px 0;}
 .stocklist .rglPlayer {vertical-align:top; width:55px; display:inline-block; margin:2px 0 0 0;}
+@media screen and (orientation: portrait) {
+  .lhs     {width:98%; display:block; height: 50%; position:fixed; top:0; bottom:50%}
+  .rhs     {width:97%; display:block; height: 50%; position:fixed; top:50%; bottom:100%; overflow-y:auto; overflow-x:auto;}
+}
 </style>
 <div class="lhs">
   <div id="stockranks" style="width:100%;height:100%;" class="rglWebGL html-widget"></div>
